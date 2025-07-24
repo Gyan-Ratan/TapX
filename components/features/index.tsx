@@ -4,7 +4,7 @@ import { Container } from "../container";
 import { Heading } from "../heading";
 import { Subheading } from "../subheading";
 import { FeatureIconContainer } from "./feature-icon-container";
-import { FaBolt, FaChartLine } from "react-icons/fa";
+import { FaGlobe, FaChartLine } from "react-icons/fa";
 import {
   Card,
   CardDescription,
@@ -22,7 +22,7 @@ export const Features = () => {
     <GradientContainer className="">
       <Container className="py-20 max-w-5xl mx-auto  relative z-40">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <FaBolt className="h-6 w-6 text-cyan-500" />
+          <FaGlobe className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
         <Heading className="pt-4">Global Payment Revolution</Heading>
         <Subheading>

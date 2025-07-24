@@ -6,10 +6,9 @@ import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import { StickyScroll } from "./ui/sticky-scroll";
 import {
-  IconMailForward,
-  IconSocial,
-  IconTerminal,
-  IconTool,
+  IconCreditCard,
+  IconUserPlus,
+  IconGift,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -17,7 +16,7 @@ import { BlurImage } from "./blur-image";
 export const Tools = () => {
   const content = [
     {
-      icon: <IconMailForward className="h-8 w-8 text-secondary" />,
+      icon: <IconCreditCard className="h-8 w-8 text-secondary" />,
       title: "Virtual Cards on the GO!",
       description:
         "Create as many cards as you need for your ad accounts. Set individual limits and pause any card anytime.",
@@ -34,7 +33,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSocial className="h-8 w-8 text-secondary" />,
+      icon: <IconUserPlus className="h-8 w-8 text-secondary" />,
       title: "Refer and Earn",
       description:
         "You can give access to multiple cards for your whole team and control spending for each employee and ad campaign. No personal verification needed, and you can add unlimited users.",
@@ -51,7 +50,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      icon: <IconGift className="h-8 w-8 text-secondary" />,
       title: "Ultimate Package",
       description:
         "TapxCard Offers not just freedom, but Dominant savings as Cashbacks, ",
@@ -126,7 +125,7 @@ export const Tools = () => {
     >
       <div className="px-6">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <IconTool className="h-6 w-6 text-cyan-500" />
+          <IconCreditCard className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
         <Heading className="mt-4">Perfect Card</Heading>
         <Subheading>
