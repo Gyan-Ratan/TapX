@@ -107,7 +107,7 @@ export const Footer = () => {
 
             {/* Links Grid */}
             <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
-              <div className="flex justify-center space-y-4 flex-col mt-4">
+              {/* <div className="flex justify-center space-y-4 flex-col mt-4">
                 <h3 className="text-sm font-medium mb-2">Quick Links</h3>
                 {links.map((link) => (
                   <Link
@@ -118,7 +118,7 @@ export const Footer = () => {
                     {link.name}
                   </Link>
                 ))}
-              </div>
+              </div> */}
               <div className="flex justify-center space-y-4 flex-col mt-4">
                 <h3 className="text-sm font-medium mb-2">Legal</h3>
                 {legal.map((link) => (
@@ -131,7 +131,7 @@ export const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <div className="flex justify-center space-y-4 flex-col mt-4">
+              {/* <div className="flex justify-center space-y-4 flex-col mt-4">
                 <h3 className="text-sm font-medium mb-2">Resources</h3>
                 <Link href="/blog" className="transition-colors hover:text-[#39C3EF] text-muted dark:text-muted-dark text-xs sm:text-sm">
                   Blog
@@ -142,7 +142,7 @@ export const Footer = () => {
                 <Link href="#" className="transition-colors hover:text-[#39C3EF] text-muted dark:text-muted-dark text-xs sm:text-sm">
                   Help Center
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

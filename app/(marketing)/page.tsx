@@ -13,7 +13,7 @@ import { Tools } from "@/components/tools";
 import { Icon3dCubeSphere, IconMoodConfuzedFilled, IconReceiptFilled } from "@tabler/icons-react";
 import { FeaturesSectionDemo } from "@/components/featuress";
 import { LogosWithBlurFlip } from "@/components/brandcloud";
-
+import { DownloadCTA } from "@/components/download-cta";
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
@@ -22,7 +22,7 @@ export default function Home() {
       <Features />
       <Tools />
       
-      <div className="pb-10 sm:pb-40 pt-10 sm:pt-20">
+      <div className="pb-10 sm:pb-10 pt-10 sm:pt-20">
       
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconReceiptFilled className="h-6 w-6 text-cyan-500" />
@@ -38,6 +38,8 @@ export default function Home() {
           <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
             <Icon3dCubeSphere className="h-6 w-6 text-cyan-500" />
           </FeatureIconContainer>
+          {/* make a Google Play and App Store CTA */}
+
           <Heading className="pt-4" id="security">
             Uncompromising Security
           </Heading>
@@ -47,6 +49,7 @@ export default function Home() {
           <FeaturesSectionDemo />
         </div>
       </div>
+      <DownloadCTA />
       <FAQs />
       <LogosWithBlurFlip />
       <CTA />

@@ -39,7 +39,7 @@ export const Features = () => {
               <SkeletonOne />
             </CardSkeletonContainer>
           </Card>
-          <Card>
+          <Card className="hidden md:block">
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>

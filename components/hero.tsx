@@ -12,6 +12,7 @@ import { VideoModal } from "./video-modal";
 import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
 import Lottie from "lottie-react";
+import { AnimatedHighlight } from "./animated-highlight";
 export const Hero = () => {
   const router = useRouter();
 
@@ -72,7 +73,7 @@ export const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
+      className="flex flex-col min-h-full md:min-h-[90rem] pt-20 md:pt-40 relative overflow-hidden"
     >
       <Container className="flex  flex-col items-center justify-center">
         <Heading
@@ -85,12 +86,17 @@ export const Hero = () => {
           Spend Everywhere Limitless with just Tap
           Our All-in-One Payment Solution
         </Subheading>
-        <FeaturedImages
+        {/* <FeaturedImages
           textClassName="lg:text-left text-center"
           className="lg:justify-start justify-center items-center"
           showStars
-        />
-        <div className="flex items-center gap-4 justify-center my-10 relative z-10">
+        /> */}
+{/* herer */}
+<div className="md:mt-10 mt-4">
+  <AnimatedHighlight />
+</div>
+
+        <div className="flex items-center gap-4 justify-center my-20 relative z-10">
           <Button className="flex space-x-2 items-center group !text-lg">
             <span>Get Started</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />

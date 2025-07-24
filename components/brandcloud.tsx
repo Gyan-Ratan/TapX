@@ -25,10 +25,6 @@ export function LogosWithBlurFlip() {
         src: "/images/media/guardian.svg",
       },
       {
-        name: "Gamity 2",
-        src: "/images/media/reuters.svg",
-      },
-      {
         name: "Host it 2",
         src: "/images/media/techcrunch.svg",
       },
