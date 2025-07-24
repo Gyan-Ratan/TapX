@@ -77,7 +77,7 @@ export const Footer = () => {
       <div className="border-t border-neutral-900 px-8 pt-16 pb-24 relative bg-primary">
         <div className="max-w-7xl mx-auto">
           {/* Main footer content */}
-          <div className="text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start">
+          <div className="text-sm text-neutral-400 flex sm:flex-row flex-col justify-between items-start">
             <div>
               <div className="mr-4 md:flex mb-6">
                 <Logo />
@@ -124,7 +124,7 @@ export const Footer = () => {
                 {legal.map((link) => (
                   <Link
                     key={link.name}
-                    className="transition-colors hover:text-[#39C3EF] text-muted dark:text-muted-dark text-xs sm:text-sm"
+                    className="transition-colors hover:text-[#39C3EF] text-muted-dark text-xs sm:text-sm"
                     href={link.href}
                   >
                     {link.name}

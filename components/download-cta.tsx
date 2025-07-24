@@ -17,7 +17,7 @@ export function DownloadCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight text-gray-900 =text-gray-100 sm:text-4xl"
           >
             Download Our App
           </motion.h2>
@@ -26,7 +26,7 @@ export function DownloadCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mx-auto mt-4 max-w-xl text-sm sm:text-base text-gray-600 dark:text-gray-400"
+            className="mx-auto mt-4 max-w-xl text-sm sm:text-base text-gray-600 =text-gray-400"
           >
             Get the full power of Proactiv in your pocket. Available for iOS and Android devices.
           </motion.p>

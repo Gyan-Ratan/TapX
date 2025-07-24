@@ -82,7 +82,7 @@ export const Hero = () => {
         >
           Transform Your Payments
         </Heading>
-        <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10">
+        <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted-dark max-w-3xl mx-auto relative z-10">
           Spend Everywhere Limitless with just Tap
           Our All-in-One Payment Solution
         </Subheading>

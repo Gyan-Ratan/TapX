@@ -57,10 +57,10 @@ export function LogosWithBlurFlip() {
 
   return (
     <div className="relative z-20 px-4 py-10 md:px-8 md:py-40">
-      <h2 className="bg-gradient-to-b from-neutral-900 to-neutral-600 bg-clip-text text-center font-sans text-2xl font-bold text-transparent md:text-5xl dark:from-white dark:to-neutral-600">
+      <h2 className="bg-gradient-to-b bg-clip-text text-center font-sans text-2xl font-bold text-transparent md:text-5xl from-white to-neutral-600">
         Featured in
       </h2>
-      <p className="mt-4 text-center font-sans text-base text-neutral-700 dark:text-neutral-300">
+      <p className="mt-4 text-center font-sans text-base text-neutral-300">
         Trusted by the best companies
       </p>
       <div className="relative mt-20 flex h-full w-full flex-wrap justify-center gap-10 md:gap-10">
@@ -88,7 +88,7 @@ export function LogosWithBlurFlip() {
                 alt={logo.name}
                 width="100"
                 height="100"
-                className="h-10 w-20 object-contain filter md:h-20 md:w-40 dark:invert"
+                className="h-10 w-20 object-contain filter md:h-20 md:w-40 invert"
               />
             </motion.div>
           ))}

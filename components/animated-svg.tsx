@@ -29,7 +29,7 @@ export const AnimatedSvg = () => {
         viewBox="0 0 1003 430"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className=" h-full w-full inset-0 pointer-events-none dark:opacity-100 relative mt-40 -z-10 flex-shrink-0 transform  md:scale-100 text-neutral-900"
+        className=" h-full w-full inset-0 pointer-events-none opacity-100 relative mt-40 -z-10 flex-shrink-0 transform  md:scale-100 text-neutral-900"
       >
         {/* Main Path */}
         {paths.map((path, idx) => (

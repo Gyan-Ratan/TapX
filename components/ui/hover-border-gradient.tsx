@@ -20,7 +20,7 @@ export const HoverBorderGradient = ({
       <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <Component
         className={cn(
-          "relative rounded-xl bg-white dark:bg-black px-4 py-2 transition-all duration-300 group-hover:scale-105",
+          "relative rounded-xl bg-black px-4 py-2 transition-all duration-300 group-hover:scale-105",
           className
         )}
         {...props}
