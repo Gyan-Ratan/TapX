@@ -1,0 +1,193 @@
+# TapX - Proactiv Marketing Template - Cursor Rules
+
+## Project Overview
+This is a Next.js 14 marketing website template for "Proactiv" - a social media automation platform. The project uses TypeScript, Tailwind CSS, Framer Motion, and follows modern React patterns with the App Router.
+
+## Architecture & Structure
+
+### File Organization
+- Use Next.js 14 App Router structure
+- Group related components in feature folders
+- Keep utility functions in `/lib` directory
+- Store constants in `/constants` directory
+- Use TypeScript for all components and utilities
+
+### Component Structure
+- All components should be TypeScript functional components
+- Use proper TypeScript interfaces for props
+- Export components as named exports
+- Use "use client" directive for client-side components
+- Follow React 18+ patterns and hooks
+
+## Coding Standards
+
+### TypeScript
+- Use strict TypeScript configuration
+- Define proper interfaces for all props
+- Use type imports: `import type { ComponentProps } from 'react'`
+- Avoid `any` type - use proper typing
+- Use generic types where appropriate
+
+### React Patterns
+- Use functional components with hooks
+- Implement proper error boundaries
+- Use React.memo for performance optimization when needed
+- Follow React 18 concurrent features patterns
+- Use proper key props for lists
+
+### Styling
+- Use Tailwind CSS for all styling
+- Follow the project's color scheme: charcoal (#08090A), secondary (#39C3EF)
+- Use the `cn()` utility from `/lib/utils` for conditional classes
+- Implement responsive design with mobile-first approach
+- Use CSS custom properties for dynamic values
+
+### Component Design
+- Create reusable, composable components
+- Use proper prop drilling or context as needed
+- Implement proper accessibility (ARIA labels, semantic HTML)
+- Follow the established component patterns in the codebase
+
+## Key Dependencies & Patterns
+
+### Core Libraries
+- Next.js 14 with App Router
+- React 18+ with hooks
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+- Radix UI for accessible components
+
+### Animation Patterns
+- Use Framer Motion for all animations
+- Implement scroll-triggered animations
+- Use proper easing functions
+- Optimize for performance with `useTransform` and `useScroll`
+
+### State Management
+- Use React hooks for local state
+- Implement proper loading states
+- Handle errors gracefully
+- Use proper async/await patterns
+
+## File Naming Conventions
+- Use kebab-case for file names: `feature-card.tsx`
+- Use PascalCase for component names: `FeatureCard`
+- Use camelCase for functions and variables
+- Use UPPER_SNAKE_CASE for constants
+
+## Import/Export Patterns
+- Use named exports for components
+- Group imports: React, external libraries, internal components, types
+- Use absolute imports with `@/` alias
+- Import types separately: `import type { ComponentProps } from 'react'`
+
+## Performance Guidelines
+- Use Next.js Image component for images
+- Implement proper loading states
+- Use React.memo for expensive components
+- Optimize bundle size with dynamic imports when needed
+- Use proper caching strategies
+
+## Accessibility
+- Use semantic HTML elements
+- Implement proper ARIA labels
+- Ensure keyboard navigation
+- Maintain proper color contrast
+- Use proper heading hierarchy
+
+## Testing Considerations
+- Write testable components
+- Use proper prop interfaces
+- Implement error boundaries
+- Handle edge cases gracefully
+
+## Common Patterns in This Project
+
+### Component Structure
+```typescript
+"use client";
+import React from "react";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+
+interface ComponentProps {
+  className?: string;
+  children: React.ReactNode;
+}
+
+export const Component: React.FC<ComponentProps> = ({ 
+  className, 
+  children 
+}) => {
+  return (
+    <motion.div
+      className={cn("base-classes", className)}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+```
+
+### Animation Patterns
+```typescript
+const { scrollYProgress } = useScroll({
+  target: containerRef,
+});
+
+const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+```
+
+### Styling Patterns
+```typescript
+className={cn(
+  "base-classes",
+  "responsive-classes",
+  "conditional-classes",
+  className
+)}
+```
+
+## Project-Specific Guidelines
+
+### Marketing Website Patterns
+- Focus on conversion optimization
+- Implement proper CTAs
+- Use engaging animations
+- Maintain brand consistency
+- Optimize for SEO
+
+### Content Management
+- Use MDX for blog content
+- Implement proper metadata
+- Use dynamic routing for blog posts
+- Handle image optimization
+
+### Integration Patterns
+- Use proper API patterns
+- Implement error handling
+- Use loading states
+- Handle form submissions properly
+
+## Code Quality
+- Write self-documenting code
+- Use meaningful variable names
+- Add comments for complex logic
+- Follow DRY principles
+- Implement proper error handling
+
+## Security
+- Sanitize user inputs
+- Use proper authentication patterns
+- Implement CSRF protection
+- Follow OWASP guidelines
+
+## Deployment
+- Use Vercel for deployment
+- Implement proper environment variables
+- Use proper build optimization
+- Monitor performance metrics 

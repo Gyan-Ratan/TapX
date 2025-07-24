@@ -1,0 +1,308 @@
+# TapX - Proactiv Marketing Template - Cursor Helper
+
+## Project Information
+- **Name**: TapX (Proactiv Marketing Template)
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **UI Components**: Radix UI + Custom Components
+- **Content**: MDX for blog posts
+
+## Quick Start Commands
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+```
+
+## Project Structure Overview
+
+### App Router Structure
+```
+app/
+├── (auth)/           # Authentication routes
+│   └── register/     # Registration page
+├── (marketing)/      # Marketing pages
+│   ├── blog/         # Blog with MDX posts
+│   ├── contact/      # Contact page
+│   ├── features/     # Features page
+│   ├── pricing/      # Pricing page
+│   └── page.tsx      # Home page
+├── globals.css       # Global styles
+├── layout.tsx        # Root layout
+└── prism.css         # Code highlighting
+```
+
+### Component Architecture
+```
+components/
+├── ui/               # Reusable UI components
+├── navbar/           # Navigation components
+├── features/         # Feature showcase components
+├── testimonials/     # Testimonial components
+├── blog-card.tsx     # Blog post cards
+├── button.tsx        # Button component
+├── container.tsx     # Layout container
+├── heading.tsx       # Typography components
+├── hero.tsx          # Hero section
+└── ...               # Other components
+```
+
+## Key Components Reference
+
+### Core Components
+- `Hero` - Main landing section with animated dashboard
+- `Features` - Feature showcase with interactive cards
+- `Testimonials` - Customer testimonials with slider
+- `PricingGrid` - Pricing plans display
+- `CTA` - Call-to-action sections
+- `NavBar` - Navigation with mobile/desktop variants
+
+### UI Components
+- `Button` - Reusable button with variants
+- `Container` - Layout wrapper
+- `Heading` - Typography component
+- `Dialog` - Modal component (Radix UI)
+- `AmbientColor` - Background color effects
+
+### Animation Components
+- `Beam` - Animated beam effects
+- `AnimatedSvg` - SVG animations
+- `VideoModal` - Video player modal
+- `StickyScroll` - Scroll-based animations
+
+## Design System
+
+### Colors
+- **Primary**: Charcoal (#08090A)
+- **Secondary**: Cyan (#39C3EF)
+- **Muted**: Neutral grays
+- **Background**: Dark theme with gradients
+
+### Typography
+- **Font**: Inter (Google Fonts)
+- **Weights**: 400, 500, 600, 700, 800, 900
+- **Sizes**: Responsive with mobile-first approach
+
+### Spacing
+- Uses Tailwind's spacing scale
+- Consistent padding/margin patterns
+- Responsive breakpoints
+
+## Common Development Patterns
+
+### Creating New Components
+```typescript
+"use client";
+import React from "react";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+
+interface NewComponentProps {
+  className?: string;
+  children: React.ReactNode;
+}
+
+export const NewComponent: React.FC<NewComponentProps> = ({ 
+  className, 
+  children 
+}) => {
+  return (
+    <motion.div
+      className={cn("base-classes", className)}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+```
+
+### Adding New Pages
+1. Create page in appropriate route group
+2. Add metadata export
+3. Use existing components for consistency
+4. Follow the established layout patterns
+
+### Styling Guidelines
+- Use `cn()` utility for conditional classes
+- Follow mobile-first responsive design
+- Use project's color palette
+- Implement proper hover/focus states
+
+## Blog System
+
+### Adding New Blog Posts
+1. Create MDX file in `app/(marketing)/blog/[slug]/page.mdx`
+2. Export blog metadata:
+```typescript
+export const blog = {
+  title: "Post Title",
+  description: "Post description",
+  author: { name: "Author Name", src: "avatar-url" },
+  date: "2024-01-01"
+};
+```
+
+### Blog Features
+- MDX support with syntax highlighting
+- Automatic blog listing
+- Responsive design
+- SEO optimization
+
+## Animation Patterns
+
+### Scroll Animations
+```typescript
+const { scrollYProgress } = useScroll({
+  target: containerRef,
+});
+
+const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+```
+
+### Hover Animations
+```typescript
+<motion.div
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  transition={{ duration: 0.2 }}
+>
+  Content
+</motion.div>
+```
+
+## Performance Optimization
+
+### Image Optimization
+- Use Next.js `Image` component
+- Implement proper loading states
+- Optimize image formats and sizes
+
+### Bundle Optimization
+- Use dynamic imports for heavy components
+- Implement proper code splitting
+- Monitor bundle size
+
+## SEO & Metadata
+
+### Page Metadata
+```typescript
+export const metadata: Metadata = {
+  title: "Page Title | Proactiv",
+  description: "Page description",
+  openGraph: {
+    images: ["banner-url"],
+  },
+};
+```
+
+### SEO Best Practices
+- Use semantic HTML
+- Implement proper heading hierarchy
+- Add meta descriptions
+- Optimize for Core Web Vitals
+
+## Common Issues & Solutions
+
+### Styling Issues
+- Check Tailwind classes are included in config
+- Use `cn()` utility for conditional classes
+- Verify responsive breakpoints
+
+### Animation Issues
+- Ensure Framer Motion is properly imported
+- Check animation performance
+- Use proper easing functions
+
+### TypeScript Issues
+- Define proper interfaces
+- Use type imports for React types
+- Avoid `any` type usage
+
+## Development Workflow
+
+### Feature Development
+1. Create component in appropriate directory
+2. Add TypeScript interfaces
+3. Implement responsive design
+4. Add animations if needed
+5. Test across devices
+6. Update documentation
+
+### Code Quality
+- Use ESLint for code quality
+- Follow TypeScript best practices
+- Implement proper error handling
+- Write self-documenting code
+
+## Useful Utilities
+
+### `cn()` Function
+```typescript
+import { cn } from "@/lib/utils";
+
+// Combines and deduplicates Tailwind classes
+className={cn("base-class", conditionalClass, className)}
+```
+
+### `truncate()` Function
+```typescript
+import { truncate } from "@/lib/utils";
+
+// Truncates text with ellipsis
+const shortText = truncate(longText, 100);
+```
+
+## Deployment
+
+### Vercel Deployment
+- Connect GitHub repository
+- Configure environment variables
+- Set up custom domain
+- Monitor performance
+
+### Environment Variables
+- Add to `.env.local` for development
+- Configure in Vercel dashboard for production
+- Use proper naming conventions
+
+## Resources
+
+### Documentation
+- [Next.js 14 Docs](https://nextjs.org/docs)
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
+- [Framer Motion Docs](https://www.framer.com/motion/)
+- [Radix UI Docs](https://www.radix-ui.com/)
+
+### Project Dependencies
+- See `package.json` for complete list
+- Key: Next.js, React, TypeScript, Tailwind, Framer Motion
+
+## Quick Reference
+
+### File Paths
+- Components: `@/components/`
+- Utilities: `@/lib/`
+- Constants: `@/constants/`
+- Types: Define in component files or separate type files
+
+### Common Imports
+```typescript
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { Button } from "@/components/button";
+import { Container } from "@/components/container";
+```
+
+### Component Patterns
+- Use functional components with hooks
+- Export as named exports
+- Use proper TypeScript interfaces
+- Implement responsive design
+- Add animations for engagement 
