@@ -83,7 +83,7 @@ export const Footer = () => {
                 <Logo />
               </div>
               <div className="space-y-2">
-                <div>Copyright &copy; {new Date().getFullYear()} Proactiv INC</div>
+                <div>Copyright &copy; {new Date().getFullYear()} TapXcard </div>
                 <div>All rights reserved</div>
               </div>
               
