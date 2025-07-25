@@ -47,7 +47,7 @@ export function DownloadCTA() {
             className="p-0 bg-transparent hover:bg-transparent"
           >
             <Image
-              src="/images/app-store-badge.png"
+              src="/images/apple.svg"
               alt="Download on the App Store"
               width={200}
               height={60}
@@ -60,7 +60,7 @@ export function DownloadCTA() {
             className="p-0 bg-transparent hover:bg-transparent"
           >
             <Image
-              src="/images/google-play-badge.png"
+              src="/images/google.svg"
               alt="Get it on Google Play"
               width={200}
               height={60}

@@ -21,7 +21,7 @@ const cardContents: Record<"virtual" | "physical", CardContent> = {
   virtual: {
     title: "Get new virtual card INSTANTLY!",
     description: "You can give access to multiple cards for your whole team and control spending for each employee and ad campaign. No personal verification needed, and you can add unlimited users.",
-    image: "/images/card-black_2.png",
+    image: "/images/virtual_card_svg.svg",
     buttons: [
       { text: "Telegram", href: "https://t.me/TapXcard_bot" },
       { text: "Web App", href: "https://app.tapxcard.io/" }
@@ -30,7 +30,7 @@ const cardContents: Record<"virtual" | "physical", CardContent> = {
   physical: {
     title: "Get premium physical card",
     description: "Premium cards with contactless payments, perfect for business expenses and team purchases. Enhanced security features with worldwide acceptance.",
-    image: "/images/card-white.png",
+    image: "/images/physical_card_svg.svg",
     buttons: [
         { text: "Coming Soon", href: "https://app.tapxcard.io/" },
     ]

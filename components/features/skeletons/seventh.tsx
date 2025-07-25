@@ -6,187 +6,184 @@ import Image from "next/image";
 const logos = [
   {
     name: "United States",
-    src: "https://flagcdn.com/w40/us.png",
+    src: "https://flagcdn.com/us.svg",
   },
   {
     name: "United Kingdom",
-    src: "https://flagcdn.com/w40/gb.png",
+    src: "https://flagcdn.com/gb.svg",
   },
   {
     name: "Canada",
-    src: "https://flagcdn.com/w40/ca.png",
+    src: "https://flagcdn.com/ca.svg",
   },
   {
     name: "Germany",
-    src: "https://flagcdn.com/w40/de.png",
+    src: "https://flagcdn.com/de.svg",
   },
   {
     name: "France",
-    src: "https://flagcdn.com/w40/fr.png",
+    src: "https://flagcdn.com/fr.svg",
   },
   {
     name: "Japan",
-    src: "https://flagcdn.com/w40/jp.png",
+    src: "https://flagcdn.com/jp.svg",
   },
   {
     name: "Australia",
-    src: "https://flagcdn.com/w40/au.png",
+    src: "https://flagcdn.com/au.svg",
   },
   {
     name: "Netherlands",
-    src: "https://flagcdn.com/w40/nl.png",
+    src: "https://flagcdn.com/nl.svg",
   },
   {
     name: "Switzerland",
-    src: "https://flagcdn.com/w40/ch.png",
+    src: "https://flagcdn.com/ch.svg",
   },
   {
     name: "Sweden",
-    src: "https://flagcdn.com/w40/se.png",
+    src: "https://flagcdn.com/se.svg",
   },
   {
     name: "Norway",
-    src: "https://flagcdn.com/w40/no.png",
+    src: "https://flagcdn.com/no.svg",
   },
   {
     name: "Denmark",
-    src: "https://flagcdn.com/w40/dk.png",
+    src: "https://flagcdn.com/dk.svg",
   },
   {
     name: "Finland",
-    src: "https://flagcdn.com/w40/fi.png",
+    src: "https://flagcdn.com/fi.svg",
   },
   {
     name: "Italy",
-    src: "https://flagcdn.com/w40/it.png",
+    src: "https://flagcdn.com/it.svg",
   },
   {
     name: "Spain",
-    src: "https://flagcdn.com/w40/es.png",
+    src: "https://flagcdn.com/es.svg",
   },
   {
     name: "Portugal",
-    src: "https://flagcdn.com/w40/pt.png",
+    src: "https://flagcdn.com/pt.svg",
   },
   {
     name: "Belgium",
-    src: "https://flagcdn.com/w40/be.png",
+    src: "https://flagcdn.com/be.svg",
   },
   {
     name: "Austria",
-    src: "https://flagcdn.com/w40/at.png",
+    src: "https://flagcdn.com/at.svg",
   },
   {
     name: "Ireland",
-    src: "https://flagcdn.com/w40/ie.png",
+    src: "https://flagcdn.com/ie.svg",
   },
   {
     name: "New Zealand",
-    src: "https://flagcdn.com/w40/nz.png",
+    src: "https://flagcdn.com/nz.svg",
   },
   {
     name: "Singapore",
-    src: "https://flagcdn.com/w40/sg.png",
+    src: "https://flagcdn.com/sg.svg",
   },
   {
     name: "South Korea",
-    src: "https://flagcdn.com/w40/kr.png",
+    src: "https://flagcdn.com/kr.svg",
   },
   {
     name: "Brazil",
-    src: "https://flagcdn.com/w40/br.png",
+    src: "https://flagcdn.com/br.svg",
   },
   {
     name: "Mexico",
-    src: "https://flagcdn.com/w40/mx.png",
+    src: "https://flagcdn.com/mx.svg",
   },
   {
     name: "Argentina",
-    src: "https://flagcdn.com/w40/ar.png",
+    src: "https://flagcdn.com/ar.svg",
   },
   {
     name: "Chile",
-    src: "https://flagcdn.com/w40/cl.png",
+    src: "https://flagcdn.com/cl.svg",
   },
   {
     name: "India",
-    src: "https://flagcdn.com/w40/in.png",
+    src: "https://flagcdn.com/in.svg",
   },
   {
     name: "South Africa",
-    src: "https://flagcdn.com/w40/za.png",
+    src: "https://flagcdn.com/za.svg",
   },
   {
     name: "UAE",
-    src: "https://flagcdn.com/w40/ae.png",
+    src: "https://flagcdn.com/ae.svg",
   },
   {
     name: "Israel",
-    src: "https://flagcdn.com/w40/il.png",
+    src: "https://flagcdn.com/il.svg",
   },
   {
     name: "Turkey",
-    src: "https://flagcdn.com/w40/tr.png",
+    src: "https://flagcdn.com/tr.svg",
   },
   {
     name: "Poland",
-    src: "https://flagcdn.com/w40/pl.png",
+    src: "https://flagcdn.com/pl.svg",
   },
   {
     name: "Czech Republic",
-    src: "https://flagcdn.com/w40/cz.png",
+    src: "https://flagcdn.com/cz.svg",
   },
   {
     name: "Hungary",
-    src: "https://flagcdn.com/w40/hu.png",
+    src: "https://flagcdn.com/hu.svg",
   },
   {
     name: "Greece",
-    src: "https://flagcdn.com/w40/gr.png",
+    src: "https://flagcdn.com/gr.svg",
   },
   {
     name: "Russia",
-    src: "https://flagcdn.com/w40/ru.png",
+    src: "https://flagcdn.com/ru.svg",
   },
   {
     name: "Ukraine",
-    src: "https://flagcdn.com/w40/ua.png",
+    src: "https://flagcdn.com/ua.svg",
   },
   {
     name: "Kazakhstan",
-    src: "https://flagcdn.com/w40/kz.png",
+    src: "https://flagcdn.com/kz.svg",
   },
   {
     name: "Philippines",
-    src: "https://flagcdn.com/w40/ph.png",
+    src: "https://flagcdn.com/ph.svg",
   },
   {
     name: "Thailand",
-    src: "https://flagcdn.com/w40/th.png",
+    src: "https://flagcdn.com/th.svg",
   },
   {
     name: "Vietnam",
-    src: "https://flagcdn.com/w40/vn.png",
+    src: "https://flagcdn.com/vn.svg",
   },
   {
     name: "Indonesia",
-    src: "https://flagcdn.com/w40/id.png",
+    src: "https://flagcdn.com/id.svg",
   },
   {
     name: "Malaysia",
-    src: "https://flagcdn.com/w40/my.png",
+    src: "https://flagcdn.com/my.svg",
   },
   {
     name: "Singapore",
-    src: "https://flagcdn.com/w40/sg.png",
+    src: "https://flagcdn.com/sg.svg",
   },
   {
     name: "Philippines",
-    src: "https://flagcdn.com/w40/ph.png",
+    src: "https://flagcdn.com/ph.svg",
   },
-
-  
-  
 ];
 
 export const SkeletonSeven = () => {
@@ -206,7 +203,7 @@ export const SkeletonSeven = () => {
                   alt={logo.name}
                   width={32}
                   height={24}
-                  className="w-8 h-6 object-cover rounded-sm shadow-sm"
+                  className="w-8 h-6 object-contain rounded-sm shadow-sm"
                 />
               </div>
             ))}
@@ -226,7 +223,7 @@ export const SkeletonSeven = () => {
                   alt={logo.name}
                   width={32}
                   height={24}
-                  className="w-8 h-6 object-cover rounded-sm shadow-sm"
+                  className="w-8 h-6 object-contain rounded-sm shadow-sm"
                 />
               </div>
             ))}
@@ -246,7 +243,7 @@ export const SkeletonSeven = () => {
                   alt={logo.name}
                   width={32}
                   height={24}
-                  className="w-8 h-6 object-cover rounded-sm shadow-sm"
+                  className="w-8 h-6 object-contain rounded-sm shadow-sm"
                 />
               </div>
             ))}

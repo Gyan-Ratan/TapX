@@ -23,7 +23,7 @@ export const Tools = () => {
       content: (
         <ImageContainer>
           <BlurImage
-            src="/images/tools/1.gif"
+            src="/images/tools/1.svg"
             alt="dashboard"
             height="1000"
             width="1000"
@@ -40,7 +40,7 @@ export const Tools = () => {
       content: (
         <ImageContainer>
           <BlurImage
-            src="/images/tools/2.png"
+            src="/images/tools/2.svg"
             alt="dashboard"
             height="1000"
             width="1000"

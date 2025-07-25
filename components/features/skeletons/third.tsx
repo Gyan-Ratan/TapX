@@ -5,7 +5,7 @@ export const SkeletonThree = () => {
   return (
     <div className="h-full w-full flex items-center justify-center">
       <Image
-        src="/images/spendingLimit.png"
+        src="/images/set_spending_limit.svg"
         alt="Spending Limit Feature"
         width={700}
         height={700}
