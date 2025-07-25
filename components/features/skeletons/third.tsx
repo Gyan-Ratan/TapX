@@ -7,8 +7,8 @@ export const SkeletonThree = () => {
       <Image
         src="/images/spendingLimit.png"
         alt="Spending Limit Feature"
-        width={200}
-        height={200}
+        width={700}
+        height={700}
         className="object-contain w-full h-full"
         priority
       />
