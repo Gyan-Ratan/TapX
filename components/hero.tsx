@@ -23,7 +23,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
       
       {/* Floating Images */}
       <motion.div
-        className="absolute -top-8 -left-2 w-16 h-16 z-10"
+        className="absolute -top-8 -left-5 w-16 h-16 z-10"
         animate={{
           y: [0, -10, 0],
           rotate: [0, 5, 0],
@@ -35,7 +35,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
         }}
       >
         <Image
-          src="/images/m_floating.png"
+          src="/images/m_floating.svg"
           alt="Floating token"
           width={64}
           height={64}
@@ -44,7 +44,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
       </motion.div>
 
       <motion.div
-        className="absolute -top-4 -right-6 w-12 h-12 z-10"
+        className="absolute -top-4 -right-3 w-12 h-12 z-10"
         animate={{
           y: [0, 8, 0],
           rotate: [0, -5, 0],
@@ -57,7 +57,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
         }}
       >
         <Image
-          src="/images/m_floating2.png"
+          src="/images/m_floating2.svg"
           alt="Floating token"
           width={48}
           height={48}
@@ -80,7 +80,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
         }}
       >
         <Image
-          src="/images/m_floating3.png"
+          src="/images/m_floating3.svg"
           alt="Floating token"
           width={56}
           height={56}
@@ -102,7 +102,7 @@ const MobileCard = ({ children }: { children: React.ReactNode }) => {
         }}
       >
         <Image
-          src="/images/m_floating4.png"
+          src="/images/m_floating4.svg"
           alt="Floating token"
           width={40}
           height={40}
