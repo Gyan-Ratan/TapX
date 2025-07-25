@@ -30,7 +30,7 @@ const cardContents: Record<"virtual" | "physical", CardContent> = {
   physical: {
     title: "Get premium physical card",
     description: "Premium cards with contactless payments, perfect for business expenses and team purchases. Enhanced security features with worldwide acceptance.",
-    image: "/images/w",
+    image: "/images/physical_card_svg.svg",
     buttons: [
         { text: "Coming Soon", href: "https://app.tapxcard.io/" },
     ]
