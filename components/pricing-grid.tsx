@@ -112,7 +112,10 @@ export const PricingGrid = () => {
               <Button
                 key={button.text}
                 variant={index === 0 ? "primary" : "muted"}
+                as="a"
                 href={button.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm md:text-base py-2 md:py-3 px-4 md:px-6"
               >
                 {button.text}
