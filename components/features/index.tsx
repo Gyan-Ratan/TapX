@@ -26,7 +26,14 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaGlobe className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Global Payment Revolution</Heading>
+        <Heading className="pt-4">
+          <span
+            className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent"
+            style={{ WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+          >
+            Global Payment</span> Revolution
+          
+        </Heading>
         <Subheading>
         Experience borderless spending with premium cards accepted worldwide
         </Subheading>

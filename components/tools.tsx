@@ -127,7 +127,10 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconCreditCard className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">Perfect Card</Heading>
+        <Heading className="mt-4"><span
+            className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent"
+            style={{ WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+          >Perfect</span> Card</Heading>
         <Subheading>
         Tapxcard is perfect for all your daily needs.
         </Subheading>

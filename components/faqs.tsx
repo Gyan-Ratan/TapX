@@ -98,7 +98,10 @@ export const FAQs = () => {
 
   return (
     <div className="max-w-3xl mx-auto pt-20 px-8">
-      <Heading className="pt-4">Frequently asked questions</Heading>
+      <Heading className="pt-4"><span
+            className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent"
+            style={{ WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+          >Frequently asked </span> questions</Heading>
       <div className="grid  gap-10 pt-20">
         {questions.map((item, i) => (
           <Accordion

@@ -19,7 +19,10 @@ export function DownloadCTA() {
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold tracking-tight text-white-900 text-gray-100 sm:text-4xl"
           >
-            Download Our App
+            Download Our<span
+            className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent"
+            style={{ WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+          > App</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
