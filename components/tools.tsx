@@ -23,10 +23,10 @@ export const Tools = () => {
       content: (
         <ImageContainer>
           <BlurImage
-            src="/images/tools/1.svg"
+            src="/images/tools/1.png"
             alt="dashboard"
-            height="1000"
-            width="1000"
+            height="1200"
+            width="1200"
             className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
@@ -40,10 +40,10 @@ export const Tools = () => {
       content: (
         <ImageContainer>
           <BlurImage
-            src="/images/tools/2.svg"
+            src="/images/tools/2.png"
             alt="dashboard"
-            height="1000"
-            width="1000"
+            height="1200"
+            width="1200"
             className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
