@@ -37,17 +37,15 @@ export const MobileNavbar = ({ navItems }: any) => {
         onClick={() => setOpen(!open)}
       />
       {open && (
-        <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10  pt-5  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800">
-          <div className="flex items-center justify-between w-full px-5">
-            <Logo />
-            <div className="flex items-center space-x-2">
-              <IoIosClose
-                className="h-8 w-8 text-white"
-                onClick={() => setOpen(!open)}
-              />
-            </div>
+        <div className="absolute top-full right-0  w-full bg-black/10 backdrop-blur-md border border-white/20 shadow-2xl z-50 p-4">
+          <div className="flex items-center justify-between w-full mb-4">
+            {/* <span className="text-white text-sm font-medium">Menu</span>
+            <IoIosClose
+              className="h-5 w-5 text-white cursor-pointer hover:text-gray-300 transition-colors"
+              onClick={() => setOpen(false)}
+            /> */}
           </div>
-          <div className="flex flex-col items-start justify-start gap-[14px] px-8">
+          <div className="flex flex-col gap-3">
             {navItems.map((navItem: any, idx: number) => (
               <>
                 {navItem.children && navItem.children.length > 0 ? (
@@ -57,11 +55,9 @@ export const MobileNavbar = ({ navItems }: any) => {
                         key={`link=${idx}`}
                         href={childNavItem.link}
                         onClick={() => setOpen(false)}
-                        className="relative max-w-[15rem] text-left text-2xl"
+                        className="text-white hover:text-gray-300 transition-colors text-sm py-2 px-3 rounded-lg hover:bg-white/10"
                       >
-                        <span className="block text-white">
-                          {childNavItem.title}
-                        </span>
+                        {childNavItem.title}
                       </Link>
                     ))}
                   </>
@@ -70,18 +66,16 @@ export const MobileNavbar = ({ navItems }: any) => {
                     key={`link=${idx}`}
                     href={navItem.link}
                     onClick={() => setOpen(false)}
-                    className="relative"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-2 px-3 rounded-lg hover:bg-white/10"
                   >
-                    <span className="block text-[26px] text-white">
-                      {navItem.title}
-                    </span>
+                    {navItem.title}
                   </Link>
                 )}
               </>
             ))}
           </div>
-          <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-            <Button>Get Started</Button>
+          <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-white/20">
+            <Button className="w-full text-sm py-2">Get Started</Button>
             <Button
               variant="simple"
               as={Link}
@@ -89,6 +83,7 @@ export const MobileNavbar = ({ navItems }: any) => {
               onClick={() => {
                 setOpen(false);
               }}
+              className="w-full text-sm py-2"
             >
               Login
             </Button>

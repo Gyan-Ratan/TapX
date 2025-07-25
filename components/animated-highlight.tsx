@@ -19,6 +19,11 @@ const highlights = [
     logo: "/images/globe.png",
     text: "180+ Countries Support",
     alt: "Globe Icon"
+  },
+  {
+    logo: "/images/clock.png",
+    text: "24*7 Support",
+    alt: "24*7 Support"
   }
 ];
 

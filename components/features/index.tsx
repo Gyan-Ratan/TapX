@@ -16,6 +16,8 @@ import { SkeletonTwo } from "./skeletons/second";
 import { SkeletonThree } from "./skeletons/third";
 import { SkeletonFour } from "./skeletons/fourth";
 import { SkeletonFive } from "./skeletons/fifth";
+import { SkeletonSix } from "./skeletons/sixth";
+import { SkeletonSeven } from "./skeletons/seventh";
 
 export const Features = () => {
   return (
@@ -29,7 +31,7 @@ export const Features = () => {
         Experience borderless spending with premium cards accepted worldwide
         </Subheading>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 pt-10">
           <Card className="lg:col-span-2">
             <CardTitle>Supports 60+ Tokens</CardTitle>
             <CardDescription>
@@ -57,7 +59,7 @@ export const Features = () => {
             Stick to your sources with virtual card limits. Shut the fraud out and never go out of funds.
             </CardDescription>
           </Card>
-          <Card>
+          <Card className="hidden md:block">
             <CardSkeletonContainer
               showGradient={false}
               className="max-w-[16rem] mx-auto"
@@ -78,6 +80,32 @@ export const Features = () => {
             Your financial security is our top priority. TAPxCard implements multiple layers of protection to keep your assets safe.
             </CardDescription>
           </Card>
+          <Card className="hidden md:block">
+            <CardSkeletonContainer className="max-w-[16rem] mx-auto">
+              <SkeletonSix />
+            </CardSkeletonContainer>
+            <CardTitle>24/7 Support</CardTitle>
+            <CardDescription>
+            Our dedicated support team is here to help you with any questions or issues you may have.
+            <a
+              href="https://t.me/TapXcard_bot"
+              className="text-cyan-500 underline hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded transition-colors"
+              aria-label="Contact Support via Email"
+            >
+              Contact Support
+            </a>
+            </CardDescription>
+          </Card>
+          <Card className="lg:col-span-2">
+            <CardTitle>Easy KYC, Live in 180+ Countries</CardTitle>
+            <CardDescription>
+            Get verified in minutes with our seamless KYC process, and start using your card in 180+ countries.
+            </CardDescription>
+            <CardSkeletonContainer>
+              <SkeletonSeven />
+            </CardSkeletonContainer>
+          </Card>
+          
         </div>
       </Container>
     </GradientContainer>

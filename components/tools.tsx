@@ -121,7 +121,7 @@ export const Tools = () => {
         duration: 0.5,
       }}
       ref={ref}
-      className="w-full relative h-full pt-20 md:pt-20"
+      className="w-full relative h-full md:pt-20"
     >
       <div className="px-6">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
@@ -139,7 +139,7 @@ export const Tools = () => {
 
 const ImageContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="p-4 bg-zinc-900 border border-zinc-800 rounded-lg relative shadow-2xl">
+    <div className="p-2 bg-zinc-900 border border-zinc-800 rounded-lg relative shadow-2xl max-w-2xl mx-auto">
       {children}
       <div className="absolute bottom-0 w-full h-px inset-x-0 bg-gradient-to-r from-transparent via-secondary to-transparent" />
       <div className="absolute bottom-0 w-40 mx-auto h-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
