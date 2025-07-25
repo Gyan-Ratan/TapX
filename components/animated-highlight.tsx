@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const highlights = [
   {
-    logo: "/images/mc.png",
+    logo: "/images/mc.svg",
     text: "Powered by Mastercard",
     alt: "Mastercard Logo"
   },
   {
-    logo: "/images/visa.png",
+    logo: "/images/visa.svg",
     text: "Powered by Visa",
     alt: "Visa Logo"
   },
@@ -21,7 +21,7 @@ const highlights = [
     alt: "Globe Icon"
   },
   {
-    logo: "/images/clock.png",
+    logo: "/images/clock.svg",
     text: "24*7 Support",
     alt: "24*7 Support"
   }
