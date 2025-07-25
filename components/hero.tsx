@@ -209,7 +209,7 @@ export const Hero = () => {
       <div className="block md:hidden items-center justify-center relative p-4 cursor-pointer">
         <MobileCard>
           <Image
-            src="/images/card_uni.png"
+            src="/images/hero_m_card.svg"
             alt="Payment Card"
             width={400}
             height={256}
